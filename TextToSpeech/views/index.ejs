@@ -1,0 +1,54 @@
+<style>
+    body {
+        background-color: snow;
+    }
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px;
+    }
+    h1 {
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        color: red;
+    }
+    textarea {
+        width: 100%;
+        resize: none;
+        font-size: 20px;
+        min-height: 120px;
+        border-width: 3px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    textarea:focus {
+        outline: none;
+        border-color: tomato;
+    }
+    input {
+        width: 100%;
+        background-color: teal;
+        color: white;
+        font-size: 22px;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 50px;
+        outline: none;
+    }
+    figcaption {
+        font-size: 22px;
+        font-family: Consolas;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+</style>
+
+<main>
+    <h1>Convert Text to Speech</h1>
+    <form method="post" action="/">
+        <textarea name="text"  cols="30" rows="10"></textarea>
+        <input type="submit" value="Convert to Mp3"/>
+    </form>
+</main>
